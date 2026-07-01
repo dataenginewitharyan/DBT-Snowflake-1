@@ -1,0 +1,9 @@
+snapshots:
+  - name: dim_bookings_snapshot
+    relation: ref('bookings')
+    config:
+      schema: gold
+      database: AIRBNB
+      unique_key: booking_id
+      strategy: timestamp
+      updated_at: booking_created_at

@@ -1,0 +1,9 @@
+snapshots:
+  - name: dim_hosts_snapshot
+    relation: ref('hosts')
+    config:
+      schema: gold
+      database: AIRBNB
+      unique_key: host_id
+      strategy: timestamp
+      updated_at: host_created_at
